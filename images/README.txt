@@ -1,0 +1,1 @@
+Replace the project placeholders in index.html with your own images when ready.

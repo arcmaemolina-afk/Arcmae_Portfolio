@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arcmae D. Molina | My Personal Portfolio</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="#home" class="logo">My Personal Portfolio</a>
+  <nav aria-label="Main navigation">
+    <button onclick="showSection('home')">Home</button>
+    <button onclick="showSection('about')">About</button>
+    <button onclick="showSection('skills')">Skills</button>
+    <button onclick="showSection('projects')">Projects</button>
+    <button onclick="showSection('contact')">Contact</button>
+</nav>
+</header>
+
+<main>
+<section id="home" class="hero page-section active">
+  <div>
+    <p class="eyebrow">🎨 PORTFOLIO</p>
+    <h1>Hello, I'm <span>Arcmae!</span></h1>
+    <h2>BS Animation and Multimedia Arts Student</h2>
+    <p>I’m a 2nd year student passionate about creativity and multimedia. I enjoy experimenting with digital art, animation, graphic 
+      design, and different creative projects that allow me to express ideas through visual and interactive media.
+</p>
+    <div class="buttons">
+      <a href="#about">About Me</a>
+      <a href="#projects">View My Work</a>
+    </div>
+  </div>
+  <div class="hero-art">
+    <img src="images/profile.jpg" alt="Arcmae D. Molina">
+</div>
+</section>
+
+<section id="about" class="section page-section">
+  <div class="heading"><p class="eyebrow">ABOUT ME</p><h2>Welcome to My Little Portfolio 💜</h2></div>
+  <div class="about-card">
+    <p>Good day! I'm Arcmae, a second year Bachelor of Science in Multimedia Arts student at the University of Northwestern Mindanao. 
+      I am interested in animation, multimedia, and technology, especially Web Systems and Technologies. I want to develop my technical 
+      abilities while learning how technology can be combined with creativity to create meaningful and interesting projects.</p>
+    <p>In my free time, I love exploring ways to improve my art while listening to music. I also enjoy creating different art styles, 
+      whether they are digital or traditional. I like comparing the different styles I create in digital and traditional art. 
+      These interests allow me to stay creative and continue discovering things that inspire me, especially through Pinterest.</p>
+  </div>
+</section>
+
+<section id="skills" class="section page-section">
+  <div class="heading"><p class="eyebrow">MY SKILLS</p><h2>Creative Skills</h2></div>
+  <div class="cards">
+    <article><span>🎨</span><h3>Digital Art</h3><p>Creating artwork digitally while experimenting with different styles and techniques.</p></article>
+    <article><span>🖌️</span><h3>Traditional Art</h3><p>Practicing drawing and traditional art techniques using physical materials.</p></article>
+    <article><span>✨</span><h3>Animation</h3><p>Learning animation principles and using movement to bring ideas and characters to life.</p></article>
+    <article><span>🎬</span><h3>Directing</h3><p>I have directed some short films on school projects.</p></article>
+    <article><span>💬</span><h3>Interactive Communication</h3><p>Communincation on flow with me</p></article>
+  </div>
+</section>
+
+<section id="projects" class="section page-section">
+  <div class="projects">
+
+    <article>
+        <div class="project-image">
+            <img src="images/project1.jpg" alt="1">
+        </div>
+    </article>
+
+    <article>
+        <div class="project-image">
+            <img src="images/project2.jpg" alt="2">
+        </div>
+    </article>
+
+    <article>
+        <div class="project-image">
+            <img src="images/project3.jpg" alt="3">
+        </div>
+    </article>
+
+    <article>
+        <div class="project-image">
+            <img src="images/project4.jpg" alt="4">
+        </div>
+    </article>
+
+    <article>
+        <div class="project-image">
+            <img src="images/project5.jpg" alt="5">
+        </div>
+    </article>
+
+</div>
+</section>
+
+<section id="contact" class="section page-section">
+  <div class="heading"><p class="eyebrow">CONTACT</p><h2>Let's Connect</h2></div>
+  <div class="contact">
+    <div><b>Name</b><p>Arcmae D. Molina</p></div>
+    <div><b>Email</b><p>arcmae.molina@nmsc.edu.ph</p></div>
+    <div><b>Phone</b><p>09461502474</p></div>
+    <div><b>Program</b><p>BS - Animation and Multimedia Arts</p></div>
+  </div>
+</section>
+</main>
+
+<footer>© <strong>Arcmae Molina</strong> • 2026</footer>
+<script>
+function showSection(sectionId) {
+    const sections = document.querySelectorAll(".page-section");
+
+    sections.forEach(function(section) {
+        section.classList.remove("active");
+    });
+
+    document.getElementById(sectionId).classList.add("active");
+
+    window.scrollTo(0, 0);
+}
+</script>
+</body>
+</html>
